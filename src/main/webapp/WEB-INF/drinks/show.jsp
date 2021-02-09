@@ -17,8 +17,6 @@
     <jsp:param name="profileTwo" value="Profile"/>
 </jsp:include>
 
-
-
 <div class="container">
     <jsp:include page="/WEB-INF/partials/drink-cards.jsp"/>
 </div>
@@ -35,8 +33,6 @@
         <jsp:include page="/WEB-INF/partials/vote-card.jsp"/>
     </div>
 </div>
-
-
 
 <div class="footer"></div>
 <script>
