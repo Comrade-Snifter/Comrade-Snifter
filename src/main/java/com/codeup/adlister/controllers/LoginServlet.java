@@ -39,7 +39,10 @@ public class LoginServlet extends HttpServlet {
         boolean validAttempt = Password.check(password, user.getPassword());
 
         if (validAttempt) {
-            request.getSession().setAttribute("user", user);
+            session.setAttribute("user", user);
+            boolean isAdmin = DaoFactory.getUsersDao().isAdmin(user.getId());
+            session.setAttribute("isAdmin", isAdmin);
+            session.setAttribute("isLoggedIn", true);
             response.sendRedirect("/profile");
         } else {
             session.setAttribute("incorrectPassword", true);

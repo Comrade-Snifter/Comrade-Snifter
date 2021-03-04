@@ -17,15 +17,6 @@
     <jsp:param name="profileTwo" value="Profile"/>
 </jsp:include>
 
-<div class="container">
-    <jsp:include page="/WEB-INF/partials/drink-cards.jsp"/>
-</div>
-
-<div class="container">
-    <form action="/drinks" method="get">
-        <button type="submit">Go Back</button>
-    </form>
-
 
 <div class="container-fluid">
     <div class="row">
