@@ -18,4 +18,22 @@
         display: flex;
         flex-direction: column;
     }
+    main {
+    flex: 1 0 auto;
+    }
+    .page-footer {
+        padding-top: 15px;
+        color: white;
+        background: #343a40;
+    }
+    .page-footer a {
+        color: white;
+    }
+    @media screen and (min-width: 768px){
+        .portfolio-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 </style>

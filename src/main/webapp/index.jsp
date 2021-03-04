@@ -6,7 +6,6 @@
         <jsp:param name="title" value="Comrade Snifter!" />
     </jsp:include>
     <style>
-
         <%@include file="resources/css/index.css"%>
     </style>
 </head>
@@ -19,6 +18,8 @@
     <jsp:param name="linkV" value="/login"/>
     <jsp:param name="linkVisitor" value="Login"/>
 </jsp:include>
+
+<main>
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -42,7 +43,7 @@
                     <img src="${pageContext.request.contextPath}/resources/img/pro.jpg" alt="Pro Mixer" height="200px">
                 </div>
                 <div class="descriptions" style="margin: auto">
-                    <h3>With all the info you would ever need to make these drinks including links to how to videos, using our site you will soon be mixing drinks like a pro!</h3>
+                    <h3>With all the info you would ever need to make these drinks, using our site you will soon be mixing drinks like a pro!</h3>
                 </div>
             </div>
             <div class="homePageAbout" id="shareDrinksToo" style="margin: 5px 0; display: flex">
@@ -55,6 +56,9 @@
             </div>
            </div>
     </div>
+</main>
+
+<jsp:include page="/WEB-INF/partials/footer.jsp" />
 <script>
 <%@include file="/resources/js/styling.js"%>
 </script>
